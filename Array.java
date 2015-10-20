@@ -11,11 +11,8 @@ public class Array{
 		System.out.println("Enter a name:");
 		String request = getInput.nextLine();
 
-		System.out.println(request);
-
 		for (int n=0; n<size; n++) {
-			System.out.println(names[n]);
-			if (names[n] == request) {
+			if (names[n].equals(request)) {
 				System.out.println("Yes"); 
 				System.exit(0);
 			}
