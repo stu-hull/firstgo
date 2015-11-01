@@ -1,20 +1,28 @@
 public class CatCreate {
 	public static void main(String[] args){
 		
-		Cat puss = new Cat(5);
-		Cat casper = new Cat(1.5);
-		Cat kitty = new Cat(0.5);
-
-		System.out.println(puss.getAge());
+		Cat puss = new Cat("Puss");
+		Cat casper = new Cat("Casper");
+		Cat kitty = new Cat("Kitty");
 
 		puss.setAge(4);
-		System.out.println(puss.getAge());
+		puss.setBreed("Siamese");
+		puss.setOrigin("Russian");
+		double puss_h_age = puss.humanage();
 
-		double humanage = puss.humanage();
-		System.out.println(humanage);
-		humanage = casper.humanage();
-		System.out.println(humanage);
-		humanage = kitty.humanage();
-		System.out.println(humanage);
+		casper.setAge(6.5);
+		casper.setBreed("Tabby");
+		casper.setOrigin("Spanish");
+		double casper_h_age = casper.humanage();
+
+		kitty.setAge(1.2);
+		kitty.setBreed("Unknown");
+		kitty.setOrigin("English");
+		double kitty_h_age = kitty.humanage();
+
+
+		System.out.println("My name is ", puss.getName(), 
+			", I am a ", puss.getOrigin(), puss.getBreed(),
+			" and I am ", puss.getAge(), " years old.");
 	}
 }
