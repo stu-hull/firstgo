@@ -3,14 +3,14 @@ public class CreateDog{
 		
 		Dog rex = new Dog();
 		rex.setBark("woof, grrr");
-		System.out.println("Rex:" + rex.getBark());
+		System.out.println("Rex: " + rex.getBark());
 
 		Dog terry = new Dog();
 		terry.setOwner("Mr. Basu");
 		System.out.println("Terry: My owner is " + terry.getOwner());
 
 		Dog jeff = new Dog();
-		jeff.setVet("Dr. Steve");
+		jeff.setVet("Dr. Jones");
 		System.out.println("Jeff: I'm looked after by " + jeff.getVet());
 	}
 }
