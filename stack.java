@@ -1,11 +1,13 @@
 public class stack{
 	
-	int stack[] = new int[30]{4,1,7};
-	int stackPointer = 0;
+	public stack(int a){
+		private int stack[] = new int[30];
+		private int stackPointer = 0;
+	}
 
 	public void push(self, int a){
 		
-		If (self.stackPointer == 30){
+		if (self.stackPointer == 30){
 			System.out.println("No more space");
 			break;
 
@@ -15,6 +17,10 @@ public class stack{
 
 	public int pop(self){
 		
+		if 
+		
 		int value = self.stack[self.stackPointer];
 		stackPointer -= 1;
 		return value;
+	}
+}
